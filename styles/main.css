@@ -1,0 +1,391 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url(../fonts/Satoshi-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(../fonts/Satoshi-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(../fonts/Satoshi-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Semibold.woff2);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  max-width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+body li {
+  list-style: none;
+}
+body a {
+  all: unset;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#opacity-window {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.header__inner {
+  display: block;
+  width: 100%;
+  height: 132px;
+}
+.header__inner hr {
+  margin: 0;
+  width: 100vw;
+  height: 1px;
+  background: #EBE8F4;
+  border: none;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+}
+.header__top img {
+  height: 16px;
+  width: auto;
+}
+.header__top h2 {
+  font-family: "ClashDisplay";
+  font-weight: 400;
+}
+
+.header__top-left,
+.header__top-center,
+.header__top-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  height: 100%;
+}
+
+.header__top-left {
+  margin-right: auto;
+}
+
+.header__top-right {
+  gap: 15px;
+  margin-left: auto;
+}
+
+.header__search-button {
+  margin-right: auto;
+}
+
+.header__cart-button {
+  margin-left: auto;
+}
+
+.header__profile-button {
+  margin-left: 25px;
+}
+
+.header__profile-button,
+.header__cart-button,
+.header__search-button {
+  cursor: pointer;
+}
+
+.header__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__nav li {
+  display: inline-block;
+  font-family: "Satoshi";
+  color: #4E4D93;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+footer {
+  height: 380px;
+  width: 100%;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2A254B;
+}
+
+.footer__top,
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 3%;
+  padding-right: 3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 80%;
+}
+.footer__top hr,
+.footer__bottom hr {
+  position: absolute;
+  width: 95vw;
+  height: 1px;
+  background: #4E4D93;
+  border: none;
+  margin-bottom: 80px;
+}
+
+.footer__bottom {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20%;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  height: 70%;
+}
+
+.footer__list-link {
+  font-family: "Satoshi";
+  font-size: 0.875rem;
+}
+
+.footer__list--menu,
+.footer__list--categories,
+.footer__list--company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+  width: 33.3333333333%;
+  color: #FFFFFF;
+  gap: 12px;
+}
+.footer__list--menu p,
+.footer__list--categories p,
+.footer__list--company p {
+  font-family: "ClashDisplay";
+  margin-top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__find {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 40%;
+  height: 70%;
+  gap: 0;
+}
+.footer__find p {
+  color: #FFFFFF;
+  font-family: "ClashDisplay";
+  margin-top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__input-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 56px;
+  margin-bottom: 10%;
+}
+
+#inputEmail {
+  width: 85%;
+  height: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-bottom: 10%;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #4E4D93;
+  color: #FFFFFF;
+  font-family: "Satoshi";
+}
+#inputEmail::-webkit-input-placeholder {
+  font-family: "Satoshi";
+  color: #FFFFFF;
+}
+#inputEmail::-moz-placeholder {
+  font-family: "Satoshi";
+  color: #FFFFFF;
+}
+#inputEmail:-ms-input-placeholder {
+  font-family: "Satoshi";
+  color: #FFFFFF;
+}
+#inputEmail::-ms-input-placeholder {
+  font-family: "Satoshi";
+  color: #FFFFFF;
+}
+#inputEmail::placeholder {
+  font-family: "Satoshi";
+  color: #FFFFFF;
+}
+
+#button-sign-up {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: space-between;
+  height: 56px;
+  border: none;
+  color: #2A254B;
+  cursor: pointer;
+}
+
+.footer__copyright {
+  margin-right: auto;
+  font-family: "Satoshi";
+  font-size: 0.875rem;
+  color: #FFFFFF;
+}
+
+@-webkit-keyframes cardBuyButtonAnimation {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes cardBuyButtonAnimation {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}

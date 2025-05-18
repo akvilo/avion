@@ -1,0 +1,402 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url(../fonts/Satoshi-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(../fonts/Satoshi-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(../fonts/Satoshi-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Semibold.woff2);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 704px;
+  padding-left: 5%;
+  padding-right: 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFFFFF;
+}
+
+.hero_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 584px;
+}
+
+.hero-information-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #2A254B;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 50px;
+}
+
+.hero-top-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: 40%;
+}
+
+.hero-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 120px;
+}
+.hero-title p {
+  font-family: "ClashDisplay";
+  font-size: 2rem;
+  margin-top: auto;
+}
+
+#hero-view-collection-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  width: 170px;
+  height: 56px;
+  background: #4E4D93;
+  color: #FFFFFF;
+  font-family: "Satoshi";
+  font-size: 1rem;
+}
+
+.hero-lower-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 80%;
+  height: auto;
+  margin-top: auto;
+}
+.hero-lower-content span {
+  font-family: "Satoshi";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.hero__image-side {
+  width: auto;
+}
+
+.feature-down-block,
+.feature-up-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100vw;
+  height: 355px;
+}
+
+.feature-up-block {
+  height: 10%;
+  font-family: "ClashDisplay";
+  font-size: 1.875rem;
+}
+
+.feature-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #2A254B;
+  width: 270px;
+  height: 124px;
+}
+.feature-block img {
+  height: 24px;
+  width: 24px;
+}
+.feature-block dt {
+  font-family: "ClashDisplay";
+  font-size: 1.25rem;
+}
+.feature-block dd {
+  font-family: "Satoshi";
+  margin-top: 10px;
+  margin-left: auto;
+  font-size: 1rem;
+}
+
+.feature-down-block {
+  height: 90%;
+  gap: 10%;
+}
+
+.listings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 761px;
+  width: 100%;
+}
+.listings .listings__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.listings .listing__header-text {
+  font-size: 2rem;
+  font-family: "ClashDisplay";
+  color: #2A254B;
+}
+.listings .listings-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70%;
+  width: 100%;
+  gap: 20px;
+}
+.listings .listing__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5rem;
+  width: space-between;
+  height: 462px;
+  gap: 10px;
+  color: #2A254B;
+  cursor: pointer;
+}
+.listings .listing__card-name-prudct {
+  font-size: 1rem;
+}
+.listings .listing__card-price-product {
+  font-size: 1.125rem;
+}
+.listings .listing-view-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50px;
+}
+.listings #view__collection-listing {
+  font-family: "Satoshi";
+}
+.listings .listing__card-large {
+  width: 630px;
+}
+
+.email-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 364px;
+}
+
+.email-block-paragraph {
+  font-size: 2rem;
+  font-family: "ClashDisplay";
+}
+
+.email-block-text {
+  font-family: "Satoshi";
+}
+
+.email-input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  width: 472px;
+  height: 56px;
+}
+.email-input-block input {
+  width: 80%;
+  border: none;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.email-input-block button {
+  font-family: "Satoshi";
+  color: #FFFFFF;
+  background: #2A254B;
+  width: 118px;
+  border: none;
+}
+
+.history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 603px;
+  width: 100vw;
+}
+.history .history__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 25px;
+  padding: 0 15%;
+  width: auto;
+}
+.history .history__information span {
+  font-family: "Satoshi";
+}
+.history .history__information .history__information-paragraph {
+  font-family: "ClashDisplay";
+  font-size: 1.5rem;
+}
+.history .history__information #history__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2A254B;
+  background: #FFFFFF;
+  border: none;
+  width: 150px;
+  height: 56px;
+  top: 20%;
+}
+.history .history__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

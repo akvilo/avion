@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <title>
+        Avion - product listing
+    </title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/product-listing.css">
+    <link rel="stylesheet" href="styles/cardsFunction.css">
+</head>
+<body>
+    <div id="opacity-window" style="display: none;"></div>
+    <header class = "header">
+        <div class="header__inner">
+            <div class ="header__top">
+                <div class="header__top-left">
+                    <div class="header__search-button">
+                        <img
+                        src="images/header/Search.svg"
+                        alt="Search"
+                        >
+                    </div>
+                </div>
+                <div class="header__top-center">
+                <h2 class = "header__top-text">
+                    <a 
+                    href="home-page.html"
+                    title="Home">
+                    Avion
+                    </a>
+                </h2>
+                </div>
+                <div class="header__top-right">
+                    <div class="header__cart-button">
+                        <img 
+                        src="images/header/Shopping--cart.svg" 
+                        alt="cart"
+                        onclick="showCart(siteStatus)"
+                        >
+                    </div>
+                    <div class="header___profile-button">
+                        <img 
+                        src="images/header/User--avatar.svg" 
+                        alt="profile"
+                        >
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class ="header__bottom">
+                <nav class = "header__nav">
+                    <ul class = "header__nav-list">
+                        <li class = "header__nav-item"> 
+                            <a href="/" class="header__nav-link">Plant pots</a>
+                        </li>
+                        <li class = "header__nav-item"> 
+                            <a href="/" class="header-nav-link">Ceramics</a>
+                        </li>
+                        <li class = "header__nav-item"> 
+                            <a href="/" class="header-nav-link">Tables</a>
+                        </li>
+                        <li class = "header__nav-item"> 
+                            <a href="/" class="header-nav-link">Chairs</a>
+                        </li>
+                        <li class = "header__nav-item"> 
+                            <a href="/" class="header-nav-link">Crockery</a>
+                        </li>
+                        <li class = "header__nav-item"> 
+                            <a href="/" class="header-nav-link">Tableware</a>
+                        </li>
+                        <li class = "header__nav-item"> 
+                            <a href="/" class="header-nav-link">Cutlery</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="shop">
+        <section class = "product-details">
+            <div class="product-details__image-slot">
+                <img
+                id = "product-details__current-product-image"
+                src="/images/cards/card6.svg"
+                alt="product image"
+                >
+            </div>
+            <div class="product-details__information">
+                <p class = "product-details__name" id = "product-details__current-product-name">name</p>
+                <span class = "product-details__price" id = "product-details__current-product-price">123</span>
+                <hr class = "product-details__separator">
+                <div class="product-details__information-description">
+                    <span class = "product-details__information-description-name">Product description</span>
+                    <span class = "product-details__information-description-text">
+                        A timeless design, 
+                        with premium materials features as one of our most popular and iconic pieces. 
+                        The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.
+                    </span>
+                </div>
+                <div class="product-details__information-dimension">
+                    <span>Dimensions</span>
+                    <div class = "product-details__deminsion-wrapper">
+                        <div class="product-details__height">Height
+                            <span class = "product-details__dimension-value">110cm</span>
+                        </div>
+                        <div class="product-details__width">Width
+                            <span class = "product-details__dimension-value">75cm</span>
+                        </div>
+                        <div class="product-details__depth">Depth
+                            <span class = "product-details__dimension-value">50cm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-details__information-quantitiy">
+                    <span>Quantitity</span>
+                    <div class="product-details__information-calc">1</div>
+                </div>
+                <div class="product-details__information-buttons">
+                    <button class = "product-details__button" onclick="addToCart()">Add to cart</button>
+                    <button class = "product-details__button">Save to favorites</button>
+                </div>
+            </div>
+        </section>
+        <section class = "listings">
+            <div class="listings__inner">
+                <div class="listing__header-text">
+                    <p>New Ceramics</p>
+                </div>
+                <div class="listings-product">
+                    <div class="listing__card">
+                            <img 
+                            class = "listing__card-image"
+                            src="images/cards/card1.svg"
+                            alt="card">
+                        <span class = "listing__card-name-product">The Dandy chair</span>
+                        <span class = "listing__card-price-product">£250</span>
+                    </div>
+                    <div class="listing__card">
+                            <img 
+                            class = "listing__card-image"
+                            src="images/cards/card3.svg"
+                            alt="card">
+                        <span class = "listing__card-name-product">Rustic Vase Set</span>
+                        <span class = "listing__card-price-product">£155</span>
+                    </div>
+                    <div class="listing__card">
+                            <img 
+                            class = "listing__card-image"
+                            src="images/cards/card4.svg"
+                            alt="card">
+                        <span class = "listing__card-name-product">The Silky Vase</span>
+                        <span class = "listing__card-price-product">£125</span>
+                    </div>
+                    <div class="listing__card">
+                            <img 
+                            class = "listing__card-image"
+                            src="images/cards/card2.svg"
+                            alt="card">
+                        <span class = "listing__card-name-product">The Lucy Lamp</span>
+                        <span class = "listing__card-price-product">£399</span>
+                    </div>
+                </div>
+                <div class="listing-view-collection">
+                    <a 
+                    href="/"
+                    id = "view__collection-listing">View collection
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer__top">
+            <nav class="footer__list">
+                <ul class="footer__list footer__list--menu">
+                    <p>Menu</p>
+                    <li><a class = "footer__list-link" href="/">New arrivals</a></li>
+                    <li><a class = "footer__list-link" href="/">Best sellers</a></li>
+                    <li><a class = "footer__list-link" href="/">Recently viewed</a></li>
+                    <li><a class = "footer__list-link" href="/">Popular this week</a></li>
+                    <li><a class = "footer__list-link" href="/">All products</a></li>
+                </ul>
+                <ul class="footer__list footer__list--categories">
+                    <p>Categories</p>
+                    <li><a class = "footer__list-link" href="/">Crockery</a></li>
+                    <li><a class = "footer__list-link" href="/">Furniture</a></li>
+                    <li><a class = "footer__list-link" href="/">Homeware</a></li>
+                    <li><a class = "footer__list-link" href="/">Plant pots</a></li>
+                    <li><a class = "footer__list-link" href="/">Chairs</a></li>
+                    <li><a class = "footer__list-link" href="/">Crockery</a></li>
+                </ul>
+                <ul class="footer__list footer__list--company">
+                    <p>Our company</p>
+                    <li><a class = "footer__list-link" href="/">About us</a></li>
+                    <li><a class = "footer__list-link" href="/">Vacancies</a></li>
+                    <li><a class = "footer__list-link" href="/">Contact us</a></li>
+                    <li><a class = "footer__list-link" href="/">Privacy</a></li>
+                    <li><a class = "footer__list-link" href="/">Returns policy</a></li>
+                </ul>
+            </nav>
+            <div class="footer__find">
+                <p>Join our mailing list</p>
+                <div class="footer__input-email">
+                    <input
+                    id = "inputEmail"
+                    type="email"
+                    placeholder="your@email.com"
+                    >
+                    <button id = "button-sign-up">Sign up</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <hr>
+            <span class = "footer__copyright">Copyright 2022 Avion LTD</span>
+            <nav class = "footer__bottom-links">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </nav>
+        </div>
+    </footer>
+    <script src = "js/product-listing.js"></script>
+    <script src = "script.js"></script>
+    <script src = "/js/cardFunction.js"></script>
+</body>
+</html>

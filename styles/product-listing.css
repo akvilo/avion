@@ -1,0 +1,504 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url(../fonts/Satoshi-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(../fonts/Satoshi-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(../fonts/Satoshi-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Semibold.woff2);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.product-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  gap: 50px;
+  width: 100%;
+  height: 758px;
+}
+.product-details .product-details__image-slot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 50%;
+  height: auto;
+}
+.product-details .product-details__image-slot img {
+  width: 610px;
+}
+.product-details .product-details__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+.product-details .product-details__information .product-details__name {
+  font-size: 2.25rem;
+  font-family: "ClashDisplay";
+  margin: 0;
+}
+.product-details .product-details__information .product-details__price {
+  font-size: 1.5rem;
+  font-family: "Satoshi";
+  margin-top: 15px;
+}
+.product-details .product-details__information .product-details__separator {
+  margin: 0;
+  width: 100%;
+  height: 1px;
+  background: #EBE8F4;
+  border: none;
+  margin: 30px 0px;
+}
+.product-details .product-details__information .product-details__information-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.product-details .product-details__information .product-details__information-description-name {
+  font-family: "ClashDisplay";
+}
+.product-details .product-details__information .product-details__information-description-text {
+  font-family: "Satoshi";
+  width: 50%;
+}
+.product-details .product-details__information .product-details__information-dimension {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "ClashDisplay";
+  width: 30%;
+  height: 100px;
+  margin-top: 30px;
+}
+.product-details .product-details__information .product-details__information-dimension .product-details__deminsion-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  height: 150px;
+}
+.product-details .product-details__information .product-details__information-dimension .product-details__height,
+.product-details .product-details__information .product-details__information-dimension .product-details__width,
+.product-details .product-details__information .product-details__information-dimension .product-details__depth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25%;
+  width: 33.3333333333%;
+  height: 100%;
+}
+.product-details .product-details__information .product-details__dimension-value {
+  font-size: "Satoshi";
+  color: #2A254B;
+}
+.product-details .product-details__information .product-details__information-quantitiy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+  width: 60%;
+  height: 115px;
+  gap: 15px;
+}
+.product-details .product-details__information .product-details__information-quantitiy span {
+  font-family: "ClashDisplay";
+}
+.product-details .product-details__information .product-details__information-quantitiy .product-details__information-calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 124px;
+  height: 46px;
+  background: #EBE8F4;
+}
+.product-details .product-details__information .product-details__information-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+  height: 100px;
+  margin-top: 50px;
+  gap: 5%;
+}
+.product-details .product-details__information .product-details__information-buttons .product-details__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  background: #2A254B;
+  font-family: "Satoshi";
+  font-size: 1rem;
+  border: none;
+  width: 143px;
+  height: 56px;
+}
+.product-details .product-details__information .product-details__information-buttons .product-details__button:active {
+  background: #EBE8F4;
+  color: #2A254B;
+}
+.product-details .product-details__information .product-details__information-buttons .product-details__button:nth-child(2) {
+  background: #FFFFFF;
+  color: #2A254B;
+}
+
+.listings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 761px;
+  width: 100%;
+}
+.listings .listings__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.listings .listing__header-text {
+  font-size: 2rem;
+  font-family: "ClashDisplay";
+  color: #2A254B;
+}
+.listings .listings-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70%;
+  width: 100%;
+  gap: 20px;
+}
+.listings .listings-product .listing__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5rem;
+  width: space-between;
+  height: 462px;
+  gap: 10px;
+  color: #2A254B;
+  cursor: pointer;
+}
+.listings .listings-product .listing__card .listing__card-image {
+  height: 82%;
+}
+.listings .listings-product .listing__card .listing__card-name-product {
+  color: #2A254B;
+}
+.listings .listings-product .listing__card .listing__card-price-product {
+  font-size: 1.125rem;
+}
+.listings .listing-view-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50px;
+}
+.listings #view__collection-listing {
+  font-family: "Satoshi";
+}
+.listings .listing__card-large {
+  width: 630px;
+}
+.listings #card-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  background: #FFFFFF;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 11;
+}
+.listings #card-product .card-product__exit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  right: 0;
+  padding: 10px 10px;
+}
+.listings #card-product .card-product__exit #button-exit {
+  border: unset;
+  background: unset;
+}
+.listings #card-product .card-product__visual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.listings #card-product .card-product__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Satoshi";
+  padding: 0 25px;
+  gap: 30px;
+}
+.listings #card-product .card-product__info .card-product__name-text {
+  font-size: 2rem;
+}
+.listings #card-product .card-product__info #card__button-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Satoshi";
+  width: 150px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px, solid #2A254B;
+  font-size: 1rem;
+}
+.listings #card-product .card-product__info #card__button-buy:active {
+  background: #2A254B;
+  color: #FFFFFF;
+}
+.listings #card-product .card-product__info #card__button-buy:active {
+  -webkit-animation: cardBuyButtonAnimation 0.3s forwards;
+          animation: cardBuyButtonAnimation 0.3s forwards;
+}
+
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  font-family: "ClashDisplay";
+  color: #2A254B;
+}
+.cart .cart__header-text {
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.cart .cart__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+.cart .cart__list .cart__list-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  gap: 33.3333333333%;
+  margin-top: 15px;
+}
+.cart .separator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #EBE8F4;
+  border: none;
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+}
+.cart .cart__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 134px;
+  margin-top: 15px;
+}
+.cart .cart__card .cart__card-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  height: 100%;
+}
+.cart .cart__card .cart__card-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+.cart .cart__card .cart__card-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  padding: 10px 0px;
+  gap: 15px;
+  height: 100%;
+  width: auto;
+}
+.cart .cart__card .cart__card-information .cart__card-information-name {
+  font-size: 1rem;
+}
+.cart .cart__card .cart__card-information .cart__card-information-description {
+  font-size: 0.875rem;
+}
+.cart .cart__card .cart__card-quantity,
+.cart .cart__card .cart__card-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.cart .cart__card .cart__card-quantity {
+  width: 122px;
+  margin-left: 15%;
+}
+.cart .cart__card .cart__card-total {
+  width: 33px;
+  margin-left: 30%;
+}

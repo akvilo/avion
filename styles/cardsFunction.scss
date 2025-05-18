@@ -1,0 +1,61 @@
+    @import 'variables', 'fonts';
+
+    #card-product {
+        display: flex;
+        position: fixed;
+        background: $color-white;
+        height: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 11;
+
+        .card-product__exit {
+            display: flex;
+            position: fixed;
+            right: 0;
+            padding: 10px 10px;
+
+            #button-exit {
+                border: unset;
+                background: unset;
+            }
+        }
+
+        .card-product__visual {
+            display: flex;
+        }
+
+        .card-product__info {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-family-satoshi;
+            padding: 0 25px;
+            gap: 30px;
+
+            .card-product__name-text {
+                font-size: $h1;
+            }
+
+            #card__button-buy {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: $font-family-satoshi;
+                width: 150px;
+                height: 45px;
+                border-radius: 5px;
+                border: 1px, solid $color-dark-purple;
+                font-size: $h4;
+
+                &:active {
+                    background: $color-dark-purple;
+                    color: $color-white;
+                }
+
+                &:active {
+                    animation: cardBuyButtonAnimation 0.3s forwards;
+                }
+            }
+        }
+    }
