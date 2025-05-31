@@ -1,0 +1,141 @@
+@import 'variables', 'fonts';
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    width: 100vw;
+    margin-bottom: auto;
+
+    .shop-header {
+        position: relative;
+        width: 100%;
+        height: 210px;
+        background-size: cover;
+        background-position: center;
+
+        .shop-header__text {
+            position: absolute;
+            font-size: $h1;
+            font-family: $font-family-clashDisplay;
+            font-weight: 400;
+            color: $color-white;
+            bottom: 35px;
+            left: 5%;
+            margin: 0;
+        }
+    }
+
+    .shop-main {
+        display: flex;
+        width: 100vw;
+        height: auto;
+
+        .shop-main-sorting {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            width: 20%;
+            height: auto;
+            padding: 40px 40px;
+            gap: 25px;
+
+            .shop-main-sorting__list-name-text {
+                font-family: $font-family-clashDisplay;
+                font-weight: 500;
+                color: $color-dark-purple;
+            }
+
+            .shop-main-sorting__product-type,
+            .shop-main-sorting__price,
+            .shop-main-sorting__designer {
+                
+                ul {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            .shop-main-sorting__product-type-key,
+            .shop-main-sorting__price-key,
+            .shop-main-sorting__designer-key {
+                margin-top: 10px;
+                font-family: $font-family-satoshi;
+                color: $color-dark-purple;
+                cursor: pointer;
+
+
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    background: $color-white;
+                    width: 9px;
+                    height: 9px;
+                    border: 1px solid $color-gray-li;
+                    border-radius: 2px;
+                    margin-right: 10px;
+
+                }
+
+                &.active {
+                    &::before {
+                    content: "";
+                    display: inline-block;
+                    background: $color-dark-purple;
+                    width: 9px;
+                    height: 9px;
+                    border: 1px solid $color-dark-purple;
+                    border-radius: 2px;
+                    margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .shop-main-product {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px 40px;
+            width: 100%;
+            height: 100%;
+            gap: 25px;
+
+            .shop-main-product__card {
+                display: flex;
+                width: 305px;
+                flex-direction: column;
+                gap: 15px;
+                cursor: pointer;
+                transition: all 0.3s ease-in;
+
+                &.active {
+                    width: 450px;
+
+                    .shop-main-product__card-image {
+                    border-radius: 25px;
+                    transition: all 0.3s ease-in;
+                    }
+                }
+
+                .shop-main-product__card-image {
+                    border-radius: 0px;
+                    // box-shadow: 5px 10px 10px 1px;
+                    transition: all 0.3s ease-in;
+                }
+
+                .shop-main-product__card-name-product {
+                    font-size: $h3;
+                    color: $color-dark-purple;
+                }
+
+                .shop-main-product__card-price-product {
+                    font-size: $h4;
+                    font-weight: 500;
+                    color: $color-dark-purple;
+                }
+            }
+
+        }
+    }
+}

@@ -1,5 +1,9 @@
 @import 'variables', 'fonts';
 
+#shop {
+    margin: auto;
+}
+
 .product-details {
     display: flex;
     margin-top: 30px;
@@ -88,12 +92,12 @@
         }
 
         .product-details__dimension-value {
-            font-size: $font-family-satoshi;
+            font-family: $font-family-satoshi;
             color: $color-dark-purple;
         }
         
 
-            .product-details__information-quantitiy {
+            .product-details__information-quantity {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -331,14 +335,19 @@
 
         .cart__card-image {
             display: flex;
+            width: 110px;
             height: 100%;
+
+            img {
+                width: 110px;
+            }
         }
 
         .cart__card-information {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            margin-left: 20px;
+            margin-left: 30px;
             padding: 10px 0px;
             gap: 15px;
             height: 100%;
@@ -370,3 +379,46 @@
     }
 }
 
+.cart__buy-information {
+    display: flex;
+    gap: 25px;
+    flex-direction: column; 
+    align-items: end;
+    width: 50%;
+    height: 200px;
+
+    .cart__buy-information-total {
+        font-family: $font-family-clashDisplay;
+
+        .cart__buy-information-total-text {
+            font-size: $h4;
+            color: $color-purple;
+        }
+
+        .cart__buy-information-total-price {
+            margin-left: 15px;
+            font-size: $h3;
+            color: $color-dark-purple;
+            font-family: $font-family-satoshi;
+        }
+    }
+
+    .cart__buy-information-text {
+        font-family: $font-family-satoshi;
+        font-size: $h5;
+        color: $color-purple;
+    }
+
+    #cart__buy-information-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: $color-dark-purple;
+        color: $color-white;
+        font-family: $font-family-satoshi;
+        font-size: $h4;
+        width: 172px;
+        height: 56px;
+    }
+}

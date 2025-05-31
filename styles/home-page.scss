@@ -157,14 +157,16 @@
     }
 
     .listing__card {
+        position: relative;
         display: flex;
+        min-width: 0;
         flex-direction: column;
         font-size: $h2;
-        width: space-between;
-        height: 462px;
         gap: 10px;
         color: $color-dark-purple;
         cursor: pointer;
+
+
     }
 
     .listing__card-name-prudct {

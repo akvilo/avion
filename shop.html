@@ -8,7 +8,7 @@
         Avion - product listing
     </title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/product-listing.css">
+    <link rel="stylesheet" href="styles/shop.css">
     <link rel="stylesheet" href="styles/cardsFunction.css">
 </head>
 <body>
@@ -88,99 +88,49 @@
             </div>
         </div>
     </header>
-    <div id="shop">
-        <section class = "product-details">
-            <div class="product-details__image-slot">
-                <img
-                id = "product-details__current-product-image"
-                src="/images/cards/card6.svg"
-                alt="product image"
-                >
-            </div>
-            <div class="product-details__information">
-                <p class = "product-details__name" id = "product-details__current-product-name">name</p>
-                <span class = "product-details__price" id = "product-details__current-product-price">123</span>
-                <hr class = "product-details__separator">
-                <div class="product-details__information-description">
-                    <span class = "product-details__information-description-name">Product description</span>
-                    <span class = "product-details__information-description-text">
-                        A timeless design, 
-                        with premium materials features as one of our most popular and iconic pieces. 
-                        The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.
-                    </span>
+    <section class = "shop">
+        <div 
+            class="shop-header"
+            style="background-image: url(/images/shop/shop\ header.svg);"
+        >
+            <h3 class = "shop-header__text">
+                All products
+            </h3>  
+        </div>
+        <div class="shop-main">
+            <div class="shop-main-sorting">
+                <div class="shop-main-sorting__product-type">
+                    <span class="shop-main-sorting__list-name-text">Product type</span>
+                    <ul>
+                        <li class="shop-main-sorting__product-type-key shop-sorting__list">Furniture</li>
+                        <li class="shop-main-sorting__product-type-key shop-sorting__list">Homeware</li>
+                        <li class="shop-main-sorting__product-type-key shop-sorting__list">Sofas</li>
+                        <li class="shop-main-sorting__product-type-key shop-sorting__list active">Homeware</li>
+                        <li class="shop-main-sorting__product-type-key shop-sorting__list">Light fittings</li>
+                        <li class="shop-main-sorting__product-type-key shop-sorting__list">Accessories</li>
+                    </ul>
                 </div>
-                <div class="product-details__information-dimension">
-                    <span>Dimensions</span>
-                    <div class = "product-details__deminsion-wrapper">
-                        <div class="product-details__height">Height
-                            <span class = "product-details__dimension-value">110cm</span>
-                        </div>
-                        <div class="product-details__width">Width
-                            <span class = "product-details__dimension-value">75cm</span>
-                        </div>
-                        <div class="product-details__depth">Depth
-                            <span class = "product-details__dimension-value">50cm</span>
-                        </div>
-                    </div>
+                <div class="shop-main-sorting__price">
+                    <span class="shop-main-sorting__list-name-text">Price</span>
+                    <ul>
+                        <li class="shop-main-sorting__price-key shop-sorting__list">0 - 100</li>
+                        <li class="shop-main-sorting__price-key shop-sorting__list">101 - 250</li>
+                        <li class="shop-main-sorting__price-key shop-sorting__list">250 +</li>
+                    </ul>
                 </div>
-                <div class="product-details__information-quantity">
-                    <span>Quantitity</span>
-                    <div class="product-details__information-calc">1</div>
-                </div>
-                <div class="product-details__information-buttons">
-                    <button class = "product-details__button" onclick="addToCart()">Add to cart</button>
-                    <button class = "product-details__button">Save to favorites</button>
+                <div class="shop-main-sorting__designer">          
+                    <span class="shop-main-sorting__list-name-text">Designer</span>
+                    <ul>
+                        <li class="shop-main-sorting__designer-key shop-sorting__list">Robert Smith</li>
+                        <li class="shop-main-sorting__designer-key shop-sorting__list">Liam Gallagher</li>
+                        <li class="shop-main-sorting__designer-key shop-sorting__list">Biggie Smalls</li>
+                        <li class="shop-main-sorting__designer-key shop-sorting__list">Thom Yorke</li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        <section class = "listings">
-            <div class="listings__inner">
-                <div class="listing__header-text">
-                    <p>New Ceramics</p>
-                </div>
-                <div class="listings-product">
-                    <div class="listing__card">
-                            <img 
-                            class = "listing__card-image"
-                            src="images/cards/card1.svg"
-                            alt="card">
-                        <span class = "listing__card-name-product">The Dandy chair</span>
-                        <span class = "listing__card-price-product">£250</span>
-                    </div>
-                    <div class="listing__card">
-                            <img 
-                            class = "listing__card-image"
-                            src="images/cards/card3.svg"
-                            alt="card">
-                        <span class = "listing__card-name-product">Rustic Vase Set</span>
-                        <span class = "listing__card-price-product">£155</span>
-                    </div>
-                    <div class="listing__card">
-                            <img 
-                            class = "listing__card-image"
-                            src="images/cards/card4.svg"
-                            alt="card">
-                        <span class = "listing__card-name-product">The Silky Vase</span>
-                        <span class = "listing__card-price-product">£125</span>
-                    </div>
-                    <div class="listing__card">
-                            <img 
-                            class = "listing__card-image"
-                            src="images/cards/card2.svg"
-                            alt="card">
-                        <span class = "listing__card-name-product">The Lucy Lamp</span>
-                        <span class = "listing__card-price-product">£399</span>
-                    </div>
-                </div>
-                <div class="listing-view-collection">
-                    <a 
-                    href="/"
-                    id = "view__collection-listing">View collection
-                    </a>
-                </div>
-            </div>
-        </section>
-    </div>
+            <div class="shop-main-product">
+        </div>
+    </section>
     <footer>
         <div class="footer__top">
             <nav class="footer__list">
@@ -235,9 +185,7 @@
             </nav>
         </div>
     </footer>
-    <script src = "js/product-listing.js"></script>
     <script src = "script.js"></script>
-    <script src = "/js/cardFunction.js"></script>
-    <script src = "/js/cart.js"></script>
-</body>
+    <script src = "/js/shop.js"></script>
+    </body>
 </html>

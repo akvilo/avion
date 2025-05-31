@@ -47,6 +47,10 @@
   font-style: normal;
   font-display: swap;
 }
+#shop {
+  margin: auto;
+}
+
 .product-details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,10 +158,10 @@
   height: 100%;
 }
 .product-details .product-details__information .product-details__dimension-value {
-  font-size: "Satoshi";
+  font-family: "Satoshi";
   color: #2A254B;
 }
-.product-details .product-details__information .product-details__information-quantitiy {
+.product-details .product-details__information .product-details__information-quantity {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,10 +177,10 @@
   height: 115px;
   gap: 15px;
 }
-.product-details .product-details__information .product-details__information-quantitiy span {
+.product-details .product-details__information .product-details__information-quantity span {
   font-family: "ClashDisplay";
 }
-.product-details .product-details__information .product-details__information-quantitiy .product-details__information-calc {
+.product-details .product-details__information .product-details__information-quantity .product-details__information-calc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,7 +461,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 110px;
   height: 100%;
+}
+.cart .cart__card .cart__card-image img {
+  width: 110px;
 }
 .cart .cart__card .cart__card-information {
   display: -webkit-box;
@@ -469,7 +477,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 20px;
+  margin-left: 30px;
   padding: 10px 0px;
   gap: 15px;
   height: 100%;
@@ -501,4 +509,56 @@
 .cart .cart__card .cart__card-total {
   width: 33px;
   margin-left: 30%;
+}
+
+.cart__buy-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 50%;
+  height: 200px;
+}
+.cart__buy-information .cart__buy-information-total {
+  font-family: "ClashDisplay";
+}
+.cart__buy-information .cart__buy-information-total .cart__buy-information-total-text {
+  font-size: 1rem;
+  color: #4E4D93;
+}
+.cart__buy-information .cart__buy-information-total .cart__buy-information-total-price {
+  margin-left: 15px;
+  font-size: 1.1875rem;
+  color: #2A254B;
+  font-family: "Satoshi";
+}
+.cart__buy-information .cart__buy-information-text {
+  font-family: "Satoshi";
+  font-size: 0.875rem;
+  color: #4E4D93;
+}
+.cart__buy-information #cart__buy-information-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background: #2A254B;
+  color: #FFFFFF;
+  font-family: "Satoshi";
+  font-size: 1rem;
+  width: 172px;
+  height: 56px;
 }

@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url(../fonts/Satoshi-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(../fonts/Satoshi-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(../fonts/Satoshi-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Semibold.woff2);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../fonts/ClashDisplay-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 0;
+  width: 100vw;
+  margin-bottom: auto;
+}
+.shop .shop-header {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  background-size: cover;
+  background-position: center;
+}
+.shop .shop-header .shop-header__text {
+  position: absolute;
+  font-size: 2rem;
+  font-family: "ClashDisplay";
+  font-weight: 400;
+  color: #FFFFFF;
+  bottom: 35px;
+  left: 5%;
+  margin: 0;
+}
+.shop .shop-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: auto;
+}
+.shop .shop-main .shop-main-sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  height: auto;
+  padding: 40px 40px;
+  gap: 25px;
+}
+.shop .shop-main .shop-main-sorting .shop-main-sorting__list-name-text {
+  font-family: "ClashDisplay";
+  font-weight: 500;
+  color: #2A254B;
+}
+.shop .shop-main .shop-main-sorting .shop-main-sorting__product-type ul,
+.shop .shop-main .shop-main-sorting .shop-main-sorting__price ul,
+.shop .shop-main .shop-main-sorting .shop-main-sorting__designer ul {
+  padding: 0;
+  margin: 0;
+}
+.shop .shop-main .shop-main-sorting .shop-main-sorting__product-type-key,
+.shop .shop-main .shop-main-sorting .shop-main-sorting__price-key,
+.shop .shop-main .shop-main-sorting .shop-main-sorting__designer-key {
+  margin-top: 10px;
+  font-family: "Satoshi";
+  color: #2A254B;
+  cursor: pointer;
+}
+.shop .shop-main .shop-main-sorting .shop-main-sorting__product-type-key::before,
+.shop .shop-main .shop-main-sorting .shop-main-sorting__price-key::before,
+.shop .shop-main .shop-main-sorting .shop-main-sorting__designer-key::before {
+  content: "";
+  display: inline-block;
+  background: #FFFFFF;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #DCDCDC;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+.shop .shop-main .shop-main-sorting .shop-main-sorting__product-type-key.active::before,
+.shop .shop-main .shop-main-sorting .shop-main-sorting__price-key.active::before,
+.shop .shop-main .shop-main-sorting .shop-main-sorting__designer-key.active::before {
+  content: "";
+  display: inline-block;
+  background: #2A254B;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #2A254B;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+.shop .shop-main .shop-main-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 40px 40px;
+  width: 100%;
+  height: 100%;
+  gap: 25px;
+}
+.shop .shop-main .shop-main-product .shop-main-product__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 305px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.shop .shop-main .shop-main-product .shop-main-product__card.active {
+  width: 450px;
+}
+.shop .shop-main .shop-main-product .shop-main-product__card.active .shop-main-product__card-image {
+  border-radius: 25px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.shop .shop-main .shop-main-product .shop-main-product__card .shop-main-product__card-image {
+  border-radius: 0px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.shop .shop-main .shop-main-product .shop-main-product__card .shop-main-product__card-name-product {
+  font-size: 1.1875rem;
+  color: #2A254B;
+}
+.shop .shop-main .shop-main-product .shop-main-product__card .shop-main-product__card-price-product {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2A254B;
+}

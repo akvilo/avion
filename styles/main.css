@@ -149,6 +149,12 @@ main {
   width: 20%;
   height: 100%;
 }
+.header__top-left button,
+.header__top-center button,
+.header__top-right button {
+  border: none;
+  background: none;
+}
 
 .header__top-left {
   margin-right: auto;
