@@ -57,9 +57,7 @@
                 }
             }
 
-            .shop-main-sorting__product-type-key,
-            .shop-main-sorting__price-key,
-            .shop-main-sorting__designer-key {
+            .shop-main-sorting__product-filter {
                 margin-top: 10px;
                 font-family: $font-family-satoshi;
                 color: $color-dark-purple;
@@ -88,6 +86,46 @@
                     border: 1px solid $color-dark-purple;
                     border-radius: 2px;
                     margin-right: 10px;
+                    }
+                }
+            }
+            
+            .product-filter-light__menu {
+                display: none;    
+                padding: 15px 15px;
+                gap: 10px;
+                flex-direction: column;
+                height: auto;
+                font-family: $font-family-satoshi;
+                color: $color-dark-purple;
+                animation: lightFilterMenu 0.5s;
+
+                .product-filter-light__menu-filter {
+                    cursor: pointer;
+
+                    &::before {
+                        content: "";
+                        display: inline-block;
+                        background: $color-white;
+                        width: 9px;
+                        height: 9px;
+                        border: 1px solid $color-gray-li;
+                        border-radius: 2px;
+                        margin-right: 10px;
+
+                    }
+
+                    &.active {
+                        &::before {
+                        content: "";
+                        display: inline-block;
+                        background: $color-purple;
+                        width: 9px;
+                        height: 9px;
+                        border: 1px solid $color-dark-purple;
+                        border-radius: 2px;
+                        margin-right: 10px;
+                        }
                     }
                 }
             }
@@ -137,5 +175,14 @@
             }
 
         }
+    }
+}
+
+@keyframes lightFilterMenu {
+    from {
+        transform: translateY(-15px);
+    }
+    to {
+        transform: translateY(0px)
     }
 }

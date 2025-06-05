@@ -1,3 +1,5 @@
+const header = document.querySelector('.header')
+
 const opacityWindow = document.getElementById('opacity-window')
 const opacityShow = () => opacityWindow.style.display = 'flex';
 const opacityHidden = () => opacityWindow.style.display = 'none';
@@ -21,3 +23,7 @@ document.addEventListener('keydown', function(event) {
         windowHidden()
     }
 })
+
+let shop = document.querySelector('.shop')
+let productPage = document.querySelector('.product')
+let cart

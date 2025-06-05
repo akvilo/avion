@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/shop.css">
     <link rel="stylesheet" href="styles/cardsFunction.css">
+    <link rel="stylesheet" href="styles/cart.css">
 </head>
 <body>
     <div id="opacity-window" style="display: none;"></div>
@@ -102,29 +103,34 @@
                 <div class="shop-main-sorting__product-type">
                     <span class="shop-main-sorting__list-name-text">Product type</span>
                     <ul>
-                        <li class="shop-main-sorting__product-type-key shop-sorting__list">Furniture</li>
-                        <li class="shop-main-sorting__product-type-key shop-sorting__list">Homeware</li>
-                        <li class="shop-main-sorting__product-type-key shop-sorting__list">Sofas</li>
-                        <li class="shop-main-sorting__product-type-key shop-sorting__list active">Homeware</li>
-                        <li class="shop-main-sorting__product-type-key shop-sorting__list">Light fittings</li>
-                        <li class="shop-main-sorting__product-type-key shop-sorting__list">Accessories</li>
+                        <li class="shop-main-sorting__product-filter shop-sorting__list">Furniture</li>
+                        <li class="shop-main-sorting__product-filter shop-sorting__list">Homeware</li>
+                        <li class="shop-main-sorting__product-filter shop-sorting__list">Sofas</li>
+                        <li class="shop-main-sorting__product-filter shop-sorting__list active">Homeware</li>
+                        <li class="shop-main-sorting__product-filter shop-main-sorting__product-filter-light shop-sorting__list">Light</li>
+                            <div class="product-filter-light__menu">
+                                <span>Type of lamp:</span>
+                                <span class = "product-filter-light__menu-filter">Energy saving</span>
+                                <span class = "product-filter-light__menu-filter">LED</span>
+                            </div>
+                        <li class="shop-main-sorting__product-filter shop-sorting__list">Accessories</li>
                     </ul>
                 </div>
                 <div class="shop-main-sorting__price">
                     <span class="shop-main-sorting__list-name-text">Price</span>
                     <ul>
-                        <li class="shop-main-sorting__price-key shop-sorting__list">0 - 100</li>
-                        <li class="shop-main-sorting__price-key shop-sorting__list">101 - 250</li>
-                        <li class="shop-main-sorting__price-key shop-sorting__list">250 +</li>
+                        <li class="shop-main-sorting__product-filter shop-sorting__list">250 +</li>
+                        <li class="shop-main-sorting__product-filter shop-sorting__list">0 - 100</li>
+                        <li class="shop-main-sorting__product-filter shop-sorting__list">101 - 250</li>
                     </ul>
                 </div>
                 <div class="shop-main-sorting__designer">          
                     <span class="shop-main-sorting__list-name-text">Designer</span>
                     <ul>
-                        <li class="shop-main-sorting__designer-key shop-sorting__list">Robert Smith</li>
-                        <li class="shop-main-sorting__designer-key shop-sorting__list">Liam Gallagher</li>
-                        <li class="shop-main-sorting__designer-key shop-sorting__list">Biggie Smalls</li>
-                        <li class="shop-main-sorting__designer-key shop-sorting__list">Thom Yorke</li>
+                        <li class="shop-main-sorting__product-filter shop-sorting__list">Robert Smith</li>
+                        <li class="shop-main-sorting__product-filter shop-sorting__list">Liam Gallagher</li>
+                        <li class="shop-main-sorting__product-filter shop-sorting__list">Biggie Smalls</li>
+                        <li class="shop-main-sorting__product-filter shop-sorting__list">Thom Yorke</li>
                     </ul>
                 </div>
             </div>
@@ -187,5 +193,6 @@
     </footer>
     <script src = "script.js"></script>
     <script src = "/js/shop.js"></script>
+    <script src = "js/cart.js"></script>
     </body>
 </html>

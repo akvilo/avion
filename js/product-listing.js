@@ -1,20 +1,24 @@
-let siteStatus = 'shop'
-let shop = document.getElementById('shop')
-let cart
-const header = document.querySelector('.header')
+siteStatus = 'product page'
 
 function siteStatusChecking() {
-    if (siteStatus === 'shop') {
-        console.log('Сейчас открыт магазин')
-    }
-    else if (siteStatus === 'cart') {
-        console.log('Сейчас открыта корзина')
-
+    switch (siteStatus) {
+        case ('product page'):
+            console.info('Сейчас открыта страница продукта')
+            break
+        case ('cart'):
+            console.info('Сейчас открыта корзина')
+            break
+        case ('shop'):
+            console.info('Сейчас открыт магазин')
+            break
+        default:
+            console.error(`Сейчас открыт ${undefined}`)
+            break
     }
 }
 
-function showShop() {
-    siteStatus = 'shop'
+function productPageShop() {
+    siteStatus = 'product page'
     return`
         <!-- <section class = "product-details">
         <div class="product-details__image-slot">

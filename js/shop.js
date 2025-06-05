@@ -1,3 +1,5 @@
+siteStatus = 'shop'
+
 const shopSortingKey = document.querySelectorAll('.shop-sorting__list')
 
 shopSortingKey.forEach(key => {
@@ -5,6 +7,27 @@ shopSortingKey.forEach(key => {
         key.classList.toggle('active')
     })
 });
+
+const btnFilterLight = document.querySelector('.shop-main-sorting__product-filter-light')
+const menuFilterLight = document.querySelector('.product-filter-light__menu')
+const lightFilterKey = document.querySelectorAll('.product-filter-light__menu-filter')
+
+btnFilterLight.onclick = function() {
+    if (btnFilterLight.classList.contains('active')) {
+        menuFilterLight.style.display = 'flex'
+    }
+    else {
+        menuFilterLight.style.display = 'none'
+    }
+}
+
+
+lightFilterKey.forEach(key => {
+    key.addEventListener('click', function() {
+        key.classList.toggle('active')
+        }
+    )
+})
 
 const shopProduct = document.querySelector('.shop-main-product')
 
@@ -18,11 +41,18 @@ class Product {
     }
 }
 
-const card1 = new Product('The Dandy chair', 250, 'images/cards/card1.svg', 'wood')
-const card2 = new Product('The Lucy Lamp', 399, 'images/cards/card2.svg', 'wood')
-const card3 = new Product('The Silky Vase', 125, 'images/cards/card3.svg', 'wood')
-const card4 = new Product('The Sun Lamp', 275, 'images/cards/card7.svg', 'wood')
-const card5 = new Product('The Yellow Chair', 315, 'images/cards/card8.svg', 'wood')
+class ProductLight extends Product {
+    constructor(name, price, image, type, designer, energy) {
+        super(name, price, image, type, designer, energy);
+        this.energySaving = energy
+    }
+}
+
+const card1 = new Product('The Dandy chair', 250, 'images/cards/card1.svg', 'wood', null)
+const card2 = new ProductLight('The Lucy Lamp', 399, 'images/cards/card2.svg', 'light', null, true)
+const card3 = new Product('The Silky Vase', 125, 'images/cards/card3.svg', 'wood', null)
+const card4 = new Product('The Sun Lamp', 275, 'images/cards/card7.svg', 'wood', null)
+const card5 = new Product('The Yellow Chair', 315, 'images/cards/card8.svg', 'wood', null)
 
 
 cards = [card1, card2, card3, card4, card5]

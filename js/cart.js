@@ -7,7 +7,6 @@ function addToCart() {
     favoriteCards[i].price = convertPrice(document.getElementById('product-details__current-product-price').textContent)
     favoriteCards[i].image = document.getElementById('product-details__current-product-image').src
     favoriteCards[i].index = i+1
-
     function convertPrice(card) {
             cardPrice = card.slice(1)
             cardPrice = Number(cardPrice)
@@ -44,8 +43,9 @@ function renderCart() {
 }
 
 function showCart(status) {
-    if (status === 'shop') {
-        shop.remove()
+    if (status !== 'cart') {
+        productPage?.remove()
+        shop?.remove()
         
         siteStatus = 'cart'
             header.insertAdjacentHTML('afterend',`
@@ -83,8 +83,11 @@ function showCart(status) {
 }
 
 function subtotal() {
+        let subtotal = 0
         for (let i = 0; i<favoriteCards.length; i++) {
-            let subtotal = favoriteCards.reduce((sum, card) => sum + +(card.price), 0)
-            return subtotal
+        if (i !== 0) {
+            subtotal = favoriteCards.reduce((sum, card) => sum + +(card.price), 0)
         }
+        }
+        return subtotal
 }
